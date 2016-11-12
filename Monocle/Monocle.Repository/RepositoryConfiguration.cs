@@ -1,6 +1,4 @@
-﻿using Monocle.Repository.Interfaces;
-
-namespace Monocle.Repository.Entities
+﻿namespace Monocle.Repository
 {
     public class RepositoryConfiguration : IRepositoryConfiguration
     {

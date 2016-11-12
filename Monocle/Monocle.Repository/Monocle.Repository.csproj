@@ -48,15 +48,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\RepositoryBase.cs" />
-    <Compile Include="Interfaces\IRepository.cs" />
-    <Compile Include="Interfaces\IRepositoryConfiguration.cs" />
+    <Compile Include="RepositoryBase.cs" />
+    <Compile Include="IRepository.cs" />
+    <Compile Include="IRepositoryConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Entities\DapperBase.cs" />
-    <Compile Include="Entities\RepositoryConfiguration.cs" />
-    <Compile Include="Repository\Repository.cs" />
+    <Compile Include="DapperBase.cs" />
+    <Compile Include="RepositoryConfiguration.cs" />
+    <Compile Include="Repository.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Repository\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

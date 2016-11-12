@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Monocle.Repository.Interfaces
+namespace Monocle.Repository
 {
     public interface IRepository<T>
     {

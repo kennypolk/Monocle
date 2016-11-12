@@ -1,4 +1,4 @@
-﻿namespace Monocle.Repository.Interfaces
+﻿namespace Monocle.Repository
 {
     public interface IRepositoryConfiguration
     {

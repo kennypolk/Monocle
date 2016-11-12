@@ -1,10 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Dapper;
-using Monocle.Repository.Entities;
-using Monocle.Repository.Interfaces;
 
-namespace Monocle.Repository.Repository
+namespace Monocle.Repository
 {
     public class Repository<T> : RepositoryBase, IRepository<T>
     {

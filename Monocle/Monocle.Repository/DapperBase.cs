@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data.Common;
 
-namespace Monocle.Repository.Entities
+namespace Monocle.Repository
 {
     public abstract class DapperBase
     {

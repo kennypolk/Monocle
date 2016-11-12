@@ -1,9 +1,8 @@
 ﻿using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
-using Monocle.Repository.Interfaces;
 
-namespace Monocle.Repository.Entities
+namespace Monocle.Repository
 {
     public class RepositoryBase : DapperBase
     {
