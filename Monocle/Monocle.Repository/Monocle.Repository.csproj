@@ -48,6 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Story.cs" />
+    <Compile Include="Interfaces\IStoryRepository.cs" />
     <Compile Include="RepositoryBase.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="IRepositoryConfiguration.cs" />
@@ -55,12 +57,9 @@
     <Compile Include="DapperBase.cs" />
     <Compile Include="RepositoryConfiguration.cs" />
     <Compile Include="Repository.cs" />
+    <Compile Include="Repository\StoryRepository.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entities\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Repository\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

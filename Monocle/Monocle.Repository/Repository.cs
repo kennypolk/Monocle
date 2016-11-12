@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using Dapper;
 
 namespace Monocle.Repository
@@ -10,29 +9,59 @@ namespace Monocle.Repository
         {
         }
 
-        public List<T> Get()
-        {
-            return Get(connection => connection.GetList<T>().ToList());
-        }
-
         public T Get(int id)
         {
             return Get(connection => connection.Get<T>(id));
         }
 
-        public int? Delete(T item)
+        public List<T> Get()
         {
-            return Execute(connection => connection.Delete(item));
+            return Get(connection => connection.GetList<T>());
         }
 
-        public int? Update(T item)
+        public List<T> Get(object whereConditions)
         {
-            return Execute(connection => connection.Update(item));
+            return Get(connection => connection.GetList<T>(whereConditions));
+        }
+
+        public List<T> Get(string conditions, object parameters = null)
+        {
+            return Get(connection => connection.GetList<T>(conditions, parameters));
         }
 
         public int? Insert(T item)
         {
             return Execute(connection => connection.Insert(item));
+        }
+
+        public int Update(T item)
+        {
+            return Execute(connection => connection.Update(item));
+        }
+
+        public int Delete(T item)
+        {
+            return Execute(connection => connection.Delete(item));
+        }
+
+        public int Delete(int id)
+        {
+            return Execute(connection => connection.Delete<T>(id));
+        }
+
+        public int DeleteList(object whereConditions)
+        {
+            return Execute(connection => connection.DeleteList<T>(whereConditions));
+        }
+
+        public int DeleteList(string conditions, object parameters = null)
+        {
+            return Execute(connection => connection.DeleteList<T>(conditions, parameters));
+        }
+
+        public int RecordCount(string conditions = "", object paramerters = null)
+        {
+            return Execute(connection => connection.RecordCount<T>(conditions, paramerters));
         }
     }
 }

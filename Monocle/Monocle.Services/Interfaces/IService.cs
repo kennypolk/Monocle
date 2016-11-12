@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
-using Monocle.Repository.Interfaces;
 
-namespace Monocle.Repository
+namespace Monocle.Services.Interfaces
 {
-    public interface IRepository<T> 
+    public interface IService<T>
     {
         T Get(int id);
         List<T> Get();

@@ -40,12 +40,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IStoryService.cs" />
+    <Compile Include="Interfaces\IService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Service.cs" />
+    <Compile Include="Services\StoryService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BusinessObjects\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Monocle.Repository\Monocle.Repository.csproj">
+      <Project>{0E35D1AE-F791-4ED8-B234-D26A54798C3B}</Project>
+      <Name>Monocle.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
