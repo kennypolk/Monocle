@@ -7,6 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monocle.Api", "Monocle.Api\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monocle.Api.Tests", "Monocle.Api.Tests\Monocle.Api.Tests.csproj", "{155CFC4D-E36A-4260-8E7C-AB32003B6DC8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monocle.Repository", "Monocle.Repository\Monocle.Repository.csproj", "{0E35D1AE-F791-4ED8-B234-D26A54798C3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monocle.Repository.Tests", "Monocle.Repository.Tests\Monocle.Repository.Tests.csproj", "{B74E4674-878F-48F9-A513-4E04D84B7F7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monocle.Services", "Monocle.Services\Monocle.Services.csproj", "{840499E6-613A-46B6-922F-8E11779CD45A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monocle.Services.Tests", "Monocle.Services.Tests\Monocle.Services.Tests.csproj", "{4E300B0C-1DCC-4041-B0C4-0840D44D2E8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +29,22 @@ Global
 		{155CFC4D-E36A-4260-8E7C-AB32003B6DC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{155CFC4D-E36A-4260-8E7C-AB32003B6DC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{155CFC4D-E36A-4260-8E7C-AB32003B6DC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E35D1AE-F791-4ED8-B234-D26A54798C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E35D1AE-F791-4ED8-B234-D26A54798C3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E35D1AE-F791-4ED8-B234-D26A54798C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E35D1AE-F791-4ED8-B234-D26A54798C3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B74E4674-878F-48F9-A513-4E04D84B7F7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B74E4674-878F-48F9-A513-4E04D84B7F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B74E4674-878F-48F9-A513-4E04D84B7F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B74E4674-878F-48F9-A513-4E04D84B7F7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{840499E6-613A-46B6-922F-8E11779CD45A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{840499E6-613A-46B6-922F-8E11779CD45A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{840499E6-613A-46B6-922F-8E11779CD45A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{840499E6-613A-46B6-922F-8E11779CD45A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E300B0C-1DCC-4041-B0C4-0840D44D2E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E300B0C-1DCC-4041-B0C4-0840D44D2E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E300B0C-1DCC-4041-B0C4-0840D44D2E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E300B0C-1DCC-4041-B0C4-0840D44D2E8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
