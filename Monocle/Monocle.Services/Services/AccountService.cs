@@ -4,9 +4,9 @@ using Monocle.Services.Interfaces;
 
 namespace Monocle.Services.Services
 {
-    public class PostService : RestService<Post>, IPostService
+    public class AccountService : RestService<Account>, IAccountService
     {
-        public PostService(IPostRepository repository) : base(repository)
+        public AccountService(IAccountRepository repository) : base(repository)
         {
         }
     }

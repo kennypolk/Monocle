@@ -107,6 +107,7 @@
   <ItemGroup>
     <Compile Include="App_Start\SimpleInjectorWebApiInitializer.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountsController.cs" />
     <Compile Include="Controllers\PostsController.cs" />
     <Compile Include="Controllers\StoriesController.cs" />
     <Compile Include="Global.asax.cs">

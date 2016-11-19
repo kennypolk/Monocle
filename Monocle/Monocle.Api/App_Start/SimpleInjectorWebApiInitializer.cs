@@ -37,6 +37,8 @@ namespace Monocle.Api
             container.Register<IStoryRepository, StoryRepository>();
             container.Register<IPostService, PostService>();
             container.Register<IPostRepository, PostRepository>();
+            container.Register<IAccountService, AccountService>();
+            container.Register<IAccountRepository, AccountRepository>());
         }
     }
 }

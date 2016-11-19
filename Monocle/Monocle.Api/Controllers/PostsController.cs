@@ -19,7 +19,8 @@ namespace Monocle.Api.Controllers
 
         public IHttpActionResult Get()
         {
-            return Ok(_postService.Get());
+            var posts = _postService.Get();
+            return Ok(posts);
         }
 
         public IHttpActionResult Get(int id)

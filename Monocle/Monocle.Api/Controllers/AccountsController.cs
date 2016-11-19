@@ -7,54 +7,54 @@ using Monocle.Services.Interfaces;
 
 namespace Monocle.Api.Controllers
 {
-    public class StoriesController : ApiController, IRestController<Story>
+    public class AccountsController : ApiController, IRestController<Account>
     {
-        private readonly IStoryService _storyService;
+        private readonly IAccountService _accountService;
 
-        public StoriesController(IStoryService storyService)
+        public AccountsController(IAccountService accountService)
         {
-            _storyService = storyService;
+            _accountService = accountService;
         }
 
         public IHttpActionResult Get()
         {
-            var stories = _storyService.Get();
-            return Ok(stories);
+            var accounts = _accountService.Get();
+            return Ok(accounts);
         }
 
         public IHttpActionResult Get(int id)
         {
-            var story = _storyService.Get(id);
-            if (story == null)
+            var account = _accountService.Get(id);
+            if (account == null)
             {
                 return NotFound();
             }
 
-            return Ok(story);
+            return Ok(account);
         }
 
-        public IHttpActionResult Post(Story item)
+        public IHttpActionResult Post(Account item)
         {
-            var id = _storyService.Insert(item);
+            var id = _accountService.Insert(item);
             if (id == null)
             {
                 //TODO: Better error message?
                 return InternalServerError();
             }
 
-            var result = _storyService.Get(id.Value);
+            var result = _accountService.Get(id.Value);
             return Created($"{Request.RequestUri}{id}", result);
         }
 
-        public IHttpActionResult Put(int id, [FromBody]Story item)
+        public IHttpActionResult Put(int id, [FromBody]Account item)
         {
-            var story = _storyService.Get(id);
-            if (story == null)
+            var account = _accountService.Get(id);
+            if (account== null)
             {
                 return NotFound();
             }
 
-            var result = _storyService.Update(story);
+            var result = _accountService.Update(item);
             if (result == 0)
             {
                 //TODO: Better Error handling
@@ -66,13 +66,13 @@ namespace Monocle.Api.Controllers
 
         public IHttpActionResult Delete(int id)
         {
-            var story = _storyService.Get(id);
-            if (story == null)
+            var account = _accountService.Get(id);
+            if (account== null)
             {
                 return NotFound();
             }
 
-            var result = _storyService.Delete(id);
+            var result = _accountService.Delete(id);
             if (result == 0)
             {
                 //TODO: Better Error handling
