@@ -2,7 +2,7 @@
 
 namespace Monocle.Services.Interfaces
 {
-    public interface IStoryService : IRestService<Story>
+    public interface IPostService : IRestService<Post>
     {
     }
 }

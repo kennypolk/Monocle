@@ -4,7 +4,7 @@ using Monocle.Services.Interfaces;
 
 namespace Monocle.Services.Services
 {
-    public class StoryService : Service<Story>, IStoryService
+    public class StoryService : RestService<Story>, IStoryService
     {
         public StoryService(IStoryRepository repository) : base(repository)
         {

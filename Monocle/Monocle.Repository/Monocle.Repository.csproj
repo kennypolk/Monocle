@@ -48,7 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Post.cs" />
     <Compile Include="Entities\Story.cs" />
+    <Compile Include="Interfaces\IPostRepository.cs" />
     <Compile Include="Interfaces\IStoryRepository.cs" />
     <Compile Include="RepositoryBase.cs" />
     <Compile Include="IRepository.cs" />
@@ -57,6 +59,7 @@
     <Compile Include="DapperBase.cs" />
     <Compile Include="RepositoryConfiguration.cs" />
     <Compile Include="Repository.cs" />
+    <Compile Include="Repository\PostRepository.cs" />
     <Compile Include="Repository\StoryRepository.cs" />
   </ItemGroup>
   <ItemGroup />
